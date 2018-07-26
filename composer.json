@@ -1,0 +1,32 @@
+{
+    "name": "opengemeenten/antwoordplus",
+    "description": "AntwoordPlus API Client",
+    "license": "MIT",
+    "keywords": ["AntwoordPlus", "client"],
+    "authors": [
+        {
+            "name": "Rens Admiraal",
+            "email": "rens@simplyadmire.com"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenGemeenten\\AntwoordPlus\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "codeclimate/php-test-reporter": "^0.1.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

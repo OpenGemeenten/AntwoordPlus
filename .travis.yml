@@ -1,0 +1,10 @@
+language: php
+php:
+- 7.1
+- 7.2
+matrix:
+  allow_failures:
+  - php: hhvm
+install: composer install --dev
+script:
+- bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
